@@ -1,5 +1,6 @@
 # Counter
 A simple Counter desktop app built with Win32 API in C++
+<br>
 ![Screenshot](https://github.com/chrismes23/Counter/blob/main/res/screenshot1.png?raw=true)
 ## Instructions
 To run the program, firstly clone the repository.Then using MinGW compiler on Windows run
