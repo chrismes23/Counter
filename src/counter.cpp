@@ -3,13 +3,9 @@
 #include <stdio.h>
 #include <iostream>
 #include <mmsystem.h>
-//#include <thread>
 
 
-//using namespace std;
 
-
-BOOL Cexit=false;
 const char g_szClassName[] = "cWind";
 
 
@@ -88,7 +84,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,LPSTR lpCmdLine,
 }
 
 void calcFont();
-void initComponents();
+void initComponents(HWND hwnd);
 HWND txtB,minB,addB;
 HFONT font=CreateFont(100,0,0,0,FW_NORMAL,0,0,0,DEFAULT_CHARSET,OUT_DEFAULT_PRECIS,CLIP_DEFAULT_PRECIS,DEFAULT_QUALITY,FF_DONTCARE,"Calibri");
 HFONT bfont=CreateFont(50,0,0,0,FW_NORMAL,0,0,0,DEFAULT_CHARSET,OUT_DEFAULT_PRECIS,CLIP_DEFAULT_PRECIS,DEFAULT_QUALITY,FF_DONTCARE,"Calibri");
@@ -180,7 +176,7 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
 			
 		break;
 		case WM_CREATE:
-			initComponents();
+			initComponents(hwnd);
 			
 			{
 			
@@ -248,7 +244,7 @@ void calcFont(){
 			font_height=re.bottom;
 			DeleteObject(hNewFont);
 	}
-void initComponents(){
+void initComponents(HWND hwnd){
 	txtB=CreateWindow(
 			"static",
 			"0",
