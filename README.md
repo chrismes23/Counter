@@ -8,4 +8,5 @@ To run the program, firstly clone the repository.Then using MinGW compiler on Wi
 g++ src/counter.cpp -o counter.exe -lgdi32 -lwinmm
 ```
 <br>
-You can change the counter with the buttons available, with the scroll wheel or the arrow keys up and down.You can also change the font size using Ctrl+scroll wheel.
+You can change the counter with the buttons available, with the scroll wheel or the arrow keys up and down.You can also change the font size using Ctrl+scroll wheel.<br>
+[Download executable](https://drive.google.com/file/d/1r-Z30xLb5a5wp3tk56Sc0NLEAtEcJ-ru/view?usp=sharing)
